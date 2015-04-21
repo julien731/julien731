@@ -73,15 +73,15 @@
 
 </head>
 
-<body class="fullwidth boxed " data-device="" data-maxcols="">
+<body class="fullwidth boxed" data-device="" data-maxcols="" itemscope itemtype="http://schema.org/WebSite">
 	<div id="top"></div>
 	
 	
 	
 	<div id="header">
-		<div class="container wrap text-center">
-			<span class="">Julien Liabeuf</span>
-			<span class="">WordPress Developer</span>
+		<div class="container wrap text-center" itemprop="author" itemscope itemtype="http://schema.org/Person">
+			<span class="" ><span itemprop="givenName">Julien</span> <span itemprop="familyName">Liabeuf</span></span>
+			<span class="" itemprop="jobTitle">WordPress Developer</span>
 		</div>
 		<a href="#sidr" id="menutrigger" class="pull-right btn icon transparent"><span class="glyphicons justify"><i></i></span></a><span class="clear"></span>
 	</div><!-- /#header -->
@@ -106,8 +106,8 @@
 				<div class="col dimfull text-center" id="animation">
 					
 					<div id="ccimage" class="img-circle"><img src="https://s.gravatar.com/avatar/b1df59c5ec0a0c3abc38855c890ddbcb?s=333" alt=""></div>
-					<h1 id="ccname" class=" ">Julien Liabeuf</h1>
-					<p id="iam" class=" ">WordPress developer and project manager.</p>
+					<h1 id="ccname" class=" " itemprop="name">Julien Liabeuf</h1>
+					<p id="iam" class=" " itemprop="description">WordPress developer and project manager.</p>
 					
 				</div><!-- /.col -->
 				
@@ -126,7 +126,7 @@
 			
 			<div class="row">
 
-				<div class="col dimfull text-center">
+				<div class="col dimfull text-center" itemprop="text">
 				
 					<h2>About Me</h2>
 					
@@ -166,36 +166,39 @@
 					
 					<div class="row o-items-container format-mosaic o-index" data-cols="3" id="o-container">
 					
-						<div class="post hentry col o-item o-filterable-wp-plugin" data-cols="1" id="item-1">
+						<div class="post hentry col o-item o-filterable-wp-plugin" data-cols="1" id="item-1" itemscope itemtype="http://schema.org/CreativeWork">
 							<div class="inner-hentry">
 								<div class="posthead">
 									<div class="hovereffect hoveractions" data-group="wpas" data-zoomimg="https://www.youtube.com/watch?v=IdSOWQI3tWU" data-zoomtitle="" data-zoomi18n="Zoom" >
-										<img src="./images/awesome-support-logo.png" alt="The best support plugin for WordPress" />
+										<img src="./images/awesome-support-logo.png" alt="The best support plugin for WordPress" itemprop="image" />
 									</div>
 								</div>
-								<p>Awesome Support is the #1 <a href="http://getawesomesupport.com" target="_blank">support plugin for WordPress</a></p>
+                                <div style="display:none;" itemprop="name">Awesome Support</div>
+								<p itemprop="description">Awesome Support is the #1 <a href="http://getawesomesupport.com" target="_blank">support plugin for WordPress</a></p>
 							</div><!-- /.inner-hentry -->
 						</div><!-- /.col .o-item -->
 
-						<div class="post hentry col o-item o-filterable-wp-plugin" data-cols="1" id="item-3">
+						<div class="post hentry col o-item o-filterable-wp-plugin" data-cols="1" id="item-3" itemscope itemtype="http://schema.org/CreativeWork">
 							<div class="inner-hentry">
 								<div class="posthead">
 									<div class="hovereffect hoveractions" data-group="wpbo" data-zoomimg="https://www.youtube.com/watch?v=iQvJHSVhNUc" data-zoomtitle="" data-zoomi18n="Zoom" >
-										<img src="./images/betteroptin-wordpress.png" alt="Exit-intent popups for WordPress" />
+										<img src="./images/betteroptin-wordpress.png" alt="Exit-intent popups for WordPress" itemprop="image" />
 									</div>
 								</div>
-								<p>Capture more leads with highly configurable exit-intent popups</p>
+                                <div style="display:none;" itemprop="name">BetterOptin</div>
+								<p itemprop="description">Capture more leads with highly configurable exit-intent popups</p>
 							</div><!-- /.inner-hentry -->
 						</div><!-- /.col .o-item -->
 						
-						<div class="post hentry col o-item o-filterable-wp-plugin" data-cols="1" id="item-2">
+						<div class="post hentry col o-item o-filterable-wp-plugin" data-cols="1" id="item-2" itemscope itemtype="http://schema.org/CreativeWork">
 							<div class="inner-hentry">
 								<div class="posthead">
 									<div class="hovereffect hoveractions" data-group="wpga" data-zoomimg="http://julienliabeuf.com/wp-content/uploads/2013/11/wp-google-authenticator-cover.png" data-zoomtitle="" data-zoomi18n="Zoom" >
-										<img src="./images/google-authenticator-wordpress.png" alt="Google Authenticator for WordPress" />
+										<img src="./images/google-authenticator-wordpress.png" alt="Google Authenticator for WordPress" itemprop="image" />
 									</div>
 								</div>
-								<p>Secure your WordPress site by adding 2-factor authentication</p>
+                                <div style="display:none;" itemprop="name">WP Google Authenticator</div>
+								<p itemprop="description">Secure your WordPress site by adding 2-factor authentication</p>
 							</div><!-- /.inner-hentry -->
 						</div><!-- /.col .o-item -->
 						
@@ -297,7 +300,7 @@
 
 				<div class="col dimfull text-center">
 				
-					<p>&copy; 2015 <em>Julien Liabeuf</em>. Hosted on <a href="https://github.com/julien731/julien731.github.io" target="_blank">GitHub</a>.</p>
+					<p>&copy; <span itemprop="copyrightYear">2015</span> <em itemprop="copyrightHolder">Julien Liabeuf</em>. Hosted on <a href="https://github.com/julien731/julien731.github.io" target="_blank">GitHub</a>.</p>
 
 					
 				</div><!-- /.col -->
