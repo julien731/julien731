@@ -2,6 +2,7 @@
   "name": "julien-liabeuf",
   "version": "0.1.0",
   "private": true,
+  "friendlyName": "Julien Liabeuf",
   "devDependencies": {
     "grunt": "~0.4.5",
     "grunt-contrib-concat": "^0.5.1",
