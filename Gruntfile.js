@@ -16,11 +16,11 @@ module.exports = function (grunt) {
 
         uglify: {
             options: {
-                banner: '/*! <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> */\n'
+                banner: '/*! <%= pkg.friendlyName %> <%= grunt.template.today("yyyy-mm-dd") %> */\n'
             },
             build: {
                 src: 'js/dist.js',
-                dest: 'js/dist.js'
+                dest: 'js/dist.min.js'
             }
         }
     });
